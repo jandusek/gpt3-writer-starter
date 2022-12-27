@@ -8,14 +8,14 @@ const openai = new OpenAIApi(configuration);
 
 const generateAction = async (req, res) => {
   const basePromptPrefix = 
-`Create a rhymed story with beginning, middle and end in the style of Julia Donaldson on the following topic.
+`Create a rhymed story with beginning, middle and end in the style of Julia Donaldson on the given topic.
 
 Topic: Mouse takes a stroll.
 Story:
 A mouse took a stroll through the deep dark wood.
 A fox saw the mouse and the mouse looked good.
 Where are you going to little brown mouse?
-Come and have lunch in my underground.
+Come and have lunch in my underground house.
 
 Topic: ${req.body.userInput}
 Story: 
